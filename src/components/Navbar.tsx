@@ -56,14 +56,15 @@ const Navbar: React.FC = () => {
                 {item.name}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="#contact"
               className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               Get Started
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile menu button */}
