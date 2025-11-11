@@ -85,13 +85,13 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <button href="#contact" className="group bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 flex items-center space-x-2">
+          <a href="#contact" className="group bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 flex items-center space-x-2">
             <span>Start Your Journey</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button href="#services" className="glass-effect px-8 py-4 rounded-full font-medium text-lg text-gray-700 hover:bg-white hover:shadow-lg transition-all duration-200">
-            Services
-          </button>
+          </a>
+          <a href="#services" className="glass-effect px-8 py-4 rounded-full font-medium text-lg text-gray-700 hover:bg-white hover:shadow-lg transition-all duration-200">
+            View Our Services
+          </a>
         </motion.div>
 
         {/* Features */}
