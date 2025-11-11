@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <Sparkles className="w-4 h-4 text-primary-600" />
-          <span className="text-sm font-medium text-primary-700">Trusted by 500+ Indian Businesses</span>
+          <span className="text-sm font-medium text-primary-700">Digital Solutions Provider</span>
         </motion.div>
 
         {/* Main heading */}
@@ -85,12 +85,12 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <button className="group bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 flex items-center space-x-2">
+          <button href="#contact" className="group bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 flex items-center space-x-2">
             <span>Start Your Journey</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="glass-effect px-8 py-4 rounded-full font-medium text-lg text-gray-700 hover:bg-white hover:shadow-lg transition-all duration-200">
-            View Our Work
+          <button href="#services" className="glass-effect px-8 py-4 rounded-full font-medium text-lg text-gray-700 hover:bg-white hover:shadow-lg transition-all duration-200">
+            Services
           </button>
         </motion.div>
 
