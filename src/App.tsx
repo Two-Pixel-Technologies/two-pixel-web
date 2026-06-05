@@ -1,31 +1,16 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import FloatingShapes from './components/FloatingShapes'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import About from './components/About'
-import WhyWebsite from './components/WhyWebsite'
-import Contact from './components/Contact'
-import PrivacyPolicySection from './components/PrivacyPolicySection'
-import TermsSection from './components/TermsSection'
+import { Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsAndConditions from './pages/TermsAndConditions'
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-white overflow-hidden">
-      <FloatingShapes />
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <About />
-        <WhyWebsite />
-        <Contact />
-        <PrivacyPolicySection />
-        <TermsSection />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms" element={<TermsAndConditions />} />
+    </Routes>
   )
 }
 

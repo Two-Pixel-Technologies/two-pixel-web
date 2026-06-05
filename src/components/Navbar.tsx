@@ -57,29 +57,11 @@ const Navbar: React.FC = () => {
               </motion.a>
             ))}
             <motion.a
-              href="#privacy-policy"
-              className="text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              Privacy Policy
-            </motion.a>
-            <motion.a
-              href="#terms-and-conditions"
-              className="text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-            >
-              Terms
-            </motion.a>
-            <motion.a
-              href="/" 
+              href="/"
               className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
             >
               Get Started
             </motion.a>
@@ -118,8 +100,6 @@ const Navbar: React.FC = () => {
                   {item.name}
                 </a>
               ))}
-              <a href="#privacy-policy" className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200" onClick={() => setIsOpen(false)}>Privacy Policy</a>
-              <a href="#terms-and-conditions" className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200" onClick={() => setIsOpen(false)}>Terms & Conditions</a>
               <a href="/" className="w-full mt-4 inline-flex justify-center bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full font-medium">Get Started</a>
             </div>
           </motion.div>

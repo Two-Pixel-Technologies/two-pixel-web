@@ -105,8 +105,8 @@ const Footer: React.FC = () => {
                     link === 'About' ? '#about' :
                     link === 'Why Website?' ? '#why-website' :
                     link === 'Contact' ? '#contact' :
-                    link === 'Privacy Policy' ? '#privacy-policy' :
-                    link === 'Terms & Conditions' ? '#terms-and-conditions' :
+                    link === 'Privacy Policy' ? '/privacy-policy' :
+                    link === 'Terms & Conditions' ? '/terms' :
                     '#services'
                   return (
                     <li key={link}>
