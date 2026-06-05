@@ -6,44 +6,44 @@ const Services: React.FC = () => {
   const services = [
     {
       icon: Globe,
-      title: 'Website Development',
-      description: 'Custom websites tailored for Indian small businesses with modern design and functionality.',
-      features: ['Responsive Design', 'SEO Optimized', 'Fast Loading'],
+      title: 'Custom Software Development',
+      description: 'Tailored software systems built to solve real business processes with reliability, scale, and security.',
+      features: ['Business Workflow', 'Scalable Architecture', 'Secure Delivery'],
       color: 'from-blue-400 to-cyan-400',
     },
     {
       icon: Smartphone,
-      title: 'Mobile-First Design',
-      description: 'Optimized for the mobile-first Indian market where most users browse on smartphones.',
-      features: ['Touch Optimized', 'App-like Feel', 'PWA Ready'],
+      title: 'Web Application Development',
+      description: 'Modern web platforms for internal tools, customer portals, dashboards, and growth-focused digital products.',
+      features: ['Responsive Interfaces', 'Fast Performance', 'User-Centered UX'],
       color: 'from-purple-400 to-pink-400',
     },
     {
       icon: Search,
-      title: 'Local SEO',
-      description: 'Get found by customers in your city with powerful local search optimization.',
-      features: ['Google My Business', 'Local Keywords', 'Map Integration'],
+      title: 'Mobile Application Development',
+      description: 'Native and cross-platform apps designed to extend your reach and streamline everyday operations.',
+      features: ['Mobile-first Design', 'Performance Ready', 'Engagement Tools'],
       color: 'from-green-400 to-emerald-400',
     },
     {
       icon: ShoppingBag,
-      title: 'E-Commerce Solutions',
-      description: 'Sell your products online with secure payment gateways and inventory management.',
-      features: ['Payment Gateway', 'Inventory System', 'Order Tracking'],
+      title: 'AI-Powered Software Solutions',
+      description: 'Practical AI integrations that automate decision-making, content creation, and customer-facing workflows.',
+      features: ['AI Automation', 'Smart Insights', 'Process Optimization'],
       color: 'from-orange-400 to-red-400',
     },
     {
       icon: Palette,
-      title: 'Brand Identity',
-      description: 'Create a memorable brand with custom logos, colors, and visual identity.',
-      features: ['Logo Design', 'Brand Guidelines', 'Competitor Analysis'],
+      title: 'Business Automation Tools',
+      description: 'Reduce manual effort with custom dashboards, automated notifications, and task orchestration.',
+      features: ['Workflow Automation', 'Reporting', 'Operational Efficiency'],
       color: 'from-indigo-400 to-purple-400',
     },
     {
       icon: Gauge,
-      title: 'Performance',
-      description: 'Modern technologies and maintenance to keep your website running at peak performance.',
-      features: ['Modern Technologies', 'Maintenance', 'Performance Monitoring'],
+      title: 'Custom Digital Products',
+      description: 'Build polished products for your business, from SaaS tools to client-facing platforms and digital services.',
+      features: ['Product Strategy', 'Reliable Delivery', 'Growth Support'],
       color: 'from-teal-400 to-cyan-400',
     },
   ]
@@ -90,7 +90,7 @@ const Services: React.FC = () => {
             <span className="gradient-text">Deliver Results</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From dental clinics to yoga studios, factories to local shops - we provide comprehensive digital solutions tailored for every Indian business.
+            Takai Labs specializes in custom software, web and mobile applications, AI-powered solutions, and business automation tools for fast-moving companies.
           </p>
         </motion.div>
 

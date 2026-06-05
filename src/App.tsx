@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import FloatingShapes from './components/FloatingShapes'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import About from './components/About'
-// import Portfolio from './components/Portfolio'
-// import Testimonials from './components/Testimonials'
 import WhyWebsite from './components/WhyWebsite'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
-import FloatingShapes from './components/FloatingShapes'
+import PrivacyPolicySection from './components/PrivacyPolicySection'
+import TermsSection from './components/TermsSection'
 
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
         <About />
         <WhyWebsite />
         <Contact />
+        <PrivacyPolicySection />
+        <TermsSection />
       </main>
       <Footer />
     </div>

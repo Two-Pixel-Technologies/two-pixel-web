@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Mail, Phone, MapPin, Clock, Send, MessageSquare, CheckCircle, AlertCircle } from 'lucide-react'
+import { Mail, Phone, Send, CheckCircle, AlertCircle } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Contact: React.FC = () => {
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
           message: formData.message,
           _subject: `New Contact Form Submission from ${formData.name}`,
           _replyto: formData.email,
-          _to: 'twopixeltech@gmail.com',
+          _to: 'info.takailabs@gmail.com',
         }),
       })
 
@@ -74,14 +74,14 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91 70169 77442',
+      content: '+91-95879-99947',
       subContent: 'Mon-Sun, 10AM-6PM',
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'twopixeltech@gmail.com',
-      subContent: '24/7 Support',
+      content: 'info.takailabs@gmail.com',
+      subContent: 'Response within 24 hours',
     },
   ]
 
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="glass-effect p-8 rounded-2xl">
+            <div className="glass-effect p-8 rounded-2xl h-full">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get Your Free Quote</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -228,7 +228,7 @@ const Contact: React.FC = () => {
                   >
                     <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0" />
                     <p className="text-sm text-red-800">
-                      Oops! Something went wrong. Please try again or contact us directly at twopixeltech@gmail.com
+                      Oops! Something went wrong. Please try again or contact us directly at info.takailabs@gmail.com
                     </p>
                   </motion.div>
                 )}
@@ -248,7 +248,7 @@ const Contact: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-6"
+            className="space-y-6 self-stretch"
           >
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
@@ -258,11 +258,11 @@ const Contact: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch">
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={info.title}
-                  className="glass-effect p-4 rounded-xl hover-lift"
+                  className="glass-effect p-4 rounded-xl hover-lift h-full"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -285,13 +285,13 @@ const Contact: React.FC = () => {
 
             {/* Additional Info */}
             <motion.div
-              className="bg-gradient-to-br from-primary-50 to-secondary-50 p-6 rounded-2xl mt-8"
+              className="bg-gradient-to-br from-primary-50 to-secondary-50 p-6 rounded-2xl md:col-span-2 shadow-sm hover-lift mt-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <h4 className="font-bold text-gray-900 mb-3">Why Choose Two Pixel?</h4>
+              <h4 className="font-bold text-gray-900 mb-3">Why Choose Takai Labs?</h4>
               <ul className="space-y-2">
                 <li className="flex items-center text-sm text-gray-700">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-2"></div>
