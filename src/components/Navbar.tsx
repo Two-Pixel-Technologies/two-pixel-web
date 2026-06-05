@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X, Globe, ChevronDown } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Navbar: React.FC = () => {
@@ -15,11 +15,11 @@ const Navbar: React.FC = () => {
   }, [])
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
-    { name: 'Why Website?', href: '#why-website' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/#services' },
+    { name: 'About', href: '/#about' },
+    { name: 'Why Website?', href: '/#why-website' },
+    { name: 'Contact', href: '/#contact' },
   ]
 
   return (
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 rounded-lg blur-md opacity-75"></div>
               {/* Insert logo here from public folder */}
-              <img src="/logo_navbar.png" alt="Two Pixel logo" className="relative h-10 w-auto" />
+              <img src="/logo_navbar.png" alt="Takai Labs logo" className="relative h-10 w-auto max-w-[160px] object-contain" />
             </div>
           </motion.div>
 
@@ -57,11 +57,29 @@ const Navbar: React.FC = () => {
               </motion.a>
             ))}
             <motion.a
-              href="#contact"
+              href="#privacy-policy"
+              className="text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              Privacy Policy
+            </motion.a>
+            <motion.a
+              href="#terms-and-conditions"
+              className="text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+            >
+              Terms
+            </motion.a>
+            <motion.a
+              href="/" 
               className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
             >
               Get Started
             </motion.a>
@@ -100,9 +118,9 @@ const Navbar: React.FC = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full mt-4 bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full font-medium">
-                Get Started
-              </button>
+              <a href="#privacy-policy" className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200" onClick={() => setIsOpen(false)}>Privacy Policy</a>
+              <a href="#terms-and-conditions" className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200" onClick={() => setIsOpen(false)}>Terms & Conditions</a>
+              <a href="/" className="w-full mt-4 inline-flex justify-center bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full font-medium">Get Started</a>
             </div>
           </motion.div>
         )}

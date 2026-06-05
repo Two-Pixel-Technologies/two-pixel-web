@@ -1,6 +1,6 @@
 # Email Setup Guide
 
-The contact form is now configured to send emails to **twopixeltech@gmail.com** when users submit the form.
+The contact form is now configured to send emails to **info.takailabs@gmail.com** when users submit the form.
 
 ## Setting Up Email Integration
 
@@ -10,7 +10,7 @@ You have two options to set up email delivery:
 
 1. **Go to [Formspree.io](https://formspree.io/)** and sign up for a free account
 2. **Create a new form** in your Formspree dashboard
-3. **Set the email to**: `twopixeltech@gmail.com`
+3. **Set the email to**: `info.takailabs@gmail.com`
 4. **Copy your Form ID** (it will look like: `xyzabc123`)
 5. **Update the code** in `src/components/Contact.tsx`:
    - Find line 31: `const formspreeEndpoint = 'https://formspree.io/f/xvgoepdb'`
@@ -64,7 +64,7 @@ const response = await fetch('https://api.web3forms.com/submit', {
 3. You'll see a "Sending..." state
 4. After successful submission, you'll see: ✅ "Thank you! Your message has been sent successfully..."
 5. The form will clear automatically
-6. Check your email (twopixeltech@gmail.com) for the submission
+6. Check your email (info.takailabs@gmail.com) for the submission
 
 ## Email Format
 

@@ -4,33 +4,27 @@ import { motion } from 'framer-motion'
 
 const Footer: React.FC = () => {
   const footerLinks = {
-    'Services': [
-      'Website Development',
-      'E-Commerce Solutions',
-      'SEO & Marketing',
-      'Mobile Apps',
-      'Maintenance & Support'
-    ],
-    'Industries': [
-      'Healthcare',
-      'Manufacturing',
-      'Retail & E-commerce',
-      'Education',
-      'Hospitality'
+    'Specialties': [
+      'Custom Software Development',
+      'Web Application Development',
+      'Mobile Application Development',
+      'AI-Powered Software Solutions',
+      'Business Automation Tools'
     ],
     'Company': [
-      'About Us',
-      'Our Process',
-      'Portfolio',
-      'Testimonials',
-      'Careers'
-    ],
-    'Resources': [
-      'Blog',
-      'Case Studies',
-      'FAQ',
+      'Home',
+      'Services',
+      'About',
+      'Why Website?',
+      'Contact',
       'Privacy Policy',
-      'Terms of Service'
+      'Terms & Conditions'
+    ],
+    'Contact': [
+      '+91-95879-99947',
+      'info.takailabs@gmail.com',
+      '240 NEW ATISH MARKET, NEAR MANSAROVAR, Mansarovar, Jaipur, Jaipur - 302020, Rajasthan',
+      'Mon-Sun, 10AM-6PM'
     ]
   }
 
@@ -57,7 +51,7 @@ const Footer: React.FC = () => {
             >
               <div className="relative">
                 <div className="absolute inset-0 rounded-lg blur-md opacity-75"></div>
-                <img src="/logo_white_text.png" alt="Two Pixel" className="relative w-auto h-10" />
+                <img src="/logo_white_text.png" alt="Takai Labs" className="relative h-10 w-auto max-w-[180px] object-contain" />
               </div>
             </motion.div>
             <motion.p
@@ -67,7 +61,7 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Empowering Indian businesses with modern digital solutions since 2019.
+              Takai Labs builds custom software, web and mobile applications, and AI-powered digital products for ambitious businesses.
             </motion.p>
             <motion.div
               className="flex space-x-3"
@@ -100,16 +94,27 @@ const Footer: React.FC = () => {
             >
               <h3 className="font-semibold text-white mb-4">{category}</h3>
               <ul className="space-y-2">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-primary-400 text-sm transition-colors duration-200"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {links.map((link) => {
+                  const href =
+                    link === 'Home' ? '#home' :
+                    link === 'Services' ? '#services' :
+                    link === 'About' ? '#about' :
+                    link === 'Why Website?' ? '#why-website' :
+                    link === 'Contact' ? '#contact' :
+                    link === 'Privacy Policy' ? '#privacy-policy' :
+                    link === 'Terms & Conditions' ? '#terms-and-conditions' :
+                    '#services'
+                  return (
+                    <li key={link}>
+                      <a
+                        href={href}
+                        className="text-gray-300 hover:text-primary-400 text-sm transition-colors duration-200"
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  )
+                })}
               </ul>
             </motion.div>
           ))}
@@ -152,7 +157,7 @@ const Footer: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <p className="text-gray-300 text-sm text-center md:text-left">
-            © 2025 Two Pixel. All rights reserved.
+            © 2025 TAKAI LABS PRIVATE LIMITED. All rights reserved.
           </p>
           <p className="text-gray-300 text-sm flex items-center">
             Made with <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" /> in India
