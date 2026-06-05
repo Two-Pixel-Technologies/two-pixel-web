@@ -13,6 +13,21 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Restore path encoded by 404.html (GitHub Pages SPA redirect trick)
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get('p');
+        if (p) {
+          params.delete('p');
+          var qs = params.toString();
+          window.history.replaceState(
+            null, null,
+            p + (qs ? '?' + qs : '') + window.location.hash
+          );
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
