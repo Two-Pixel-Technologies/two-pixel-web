@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 rounded-lg blur-md opacity-75"></div>
               {/* Insert logo here from public folder */}
-              <img src="/logo_navbar.png" alt="Takai Labs logo" className="relative h-10 w-auto max-w-[160px] object-contain" />
+              <img src="/logo_new1.png" alt="Takai Labs logo" className="relative h-28 w-auto max-w-[220px] object-contain" />
             </div>
           </motion.div>
 

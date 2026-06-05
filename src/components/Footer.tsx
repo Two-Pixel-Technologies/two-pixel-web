@@ -51,7 +51,11 @@ const Footer: React.FC = () => {
             >
               <div className="relative">
                 <div className="absolute inset-0 rounded-lg blur-md opacity-75"></div>
-                <img src="/logo_white_text.png" alt="Takai Labs" className="relative h-10 w-auto max-w-[180px] object-contain" />
+                <img
+  src="/logo_new2.png"
+  alt="Takai Labs"
+  className="h-36 w-auto"
+/>
               </div>
             </motion.div>
             <motion.p
